@@ -1,0 +1,15 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "This is for cypress practice",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lalit Tewari",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.0.0"
+  }
+}
