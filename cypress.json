@@ -1,8 +1,9 @@
 {
-    
     "env": {
         "api": "https://youtube.com",
         "check": "https://google.com"
     },
-    "uncaught:exception": "uncaught:exception"
+    "uncaught:exception": "uncaught:exception",
+    "viewportWidth": 2000,
+    "viewportHeight": 660
 }
