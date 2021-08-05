@@ -1,11 +1,11 @@
 describe('Paypal home page test file', ()=>{
-    describe('Verify the UI of Home page', () => {
-        it('open browser and verify title', () => {
+    describe('Verify the UI of Home page', () =>{
+        it('open browser and verify title', () =>{
             cy.visit("https://www.paypal.com/uk/home")
             cy.title().should('eq', 'Send Money, Pay Online or Set Up a Merchant Account - PayPal')
         })
 
-        it('verify that login and sign up button are present on Home Page', ()=> {
+        it('verify that login and sign up button are present on Home Page', ()=>{
             cy.get('#ul-btn').should('be.visible') // Login button
             cy.get('#signup-button').should('be.visible') // Sign Up button
         })
@@ -25,16 +25,6 @@ describe('Paypal home page test file', ()=>{
             cy.get('[data-pa-click="HeaderMainMenu-Link-Business"]').invoke('text').should('eq', 'Business')
             cy.get('[data-pa-click="HeaderMainMenu-Link-Developer"]').invoke('text').should('eq', 'Developer')
             cy.get('[data-pa-click="HeaderMainMenu-Link-Help"]').invoke('text').should('eq', 'Help')       
-        })
-    })
-
-    describe('Second test', () => {
-        it('open browser and verify title', () => {
-            cy.visit("https://www.paypal.com/uk/home")
-        })
-
-        it('check title of home page', ()=>{
-            cy.title().should('eq', 'Send Money, Pay Online or Set Up a Merchant Account - PayPal')
         })
     })
 })
